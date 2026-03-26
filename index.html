@@ -3,26 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RANA Website</title>
+    <title>RANA - Website Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Welcome to RANA Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-4">
+            <h1 class="text-3xl font-bold text-gray-800">RANA Website Designer</h1>
+        </div>
     </header>
-    <main>
-        <h2>Main Entry Point</h2>
-        <p>This is the main entry point of the RANA website.</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 RANA Website Designer</p>
+
+    <section id="hero" class="bg-blue-500 text-white h-64 flex items-center justify-center">
+        <h2 class="text-4xl font-semibold">Transforming Ideas into Beautiful Websites</h2>
+    </section>
+
+    <section id="portfolio" class="py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Portfolio items will go here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Services</h2>
+            <ul class="list-disc list-inside">
+                <li>Responsive Web Design</li>
+                <li>E-commerce Solutions</li>
+                <li>SEO Optimization</li>
+                <li>Content Management Systems</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">About Us</h2>
+            <p>We are a team of passionate web designers dedicated to creating stunning websites for our clients.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" class="border rounded p-2 mb-2 w-full">
+                <input type="email" placeholder="Your Email" class="border rounded p-2 mb-2 w-full">
+                <textarea placeholder="Your Message" class="border rounded p-2 mb-2 w-full"></textarea>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>© 2026 RANA Website Designer. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
